@@ -1,0 +1,11 @@
+name: First workflow # nombre del workflow
+on:  workflow_dispatch #definide los trigger para que se ejecute el job evento que espera que el usuario active manualmente el flujo+
+jobs: 
+ first_job: #nombre del job
+   runs-on:  ubuntu-latest #enviroment que utilizaremos
+   steps:
+    - name: Saludando
+      run: echo "HOLA QUE TAL" 
+    - name: Despiediendose
+      run: echo"ADIOS"
+      
